@@ -29,8 +29,8 @@ public class RepositorioVeiculosArray implements IRepositorioVeiculos {
 
     @Override
     public void adicionarVeiculo(Veiculo novoVeiculo) {
-        if (v != null) { // 🟢 ADICIONEI ESTA VALIDAÇÃO
-            this.estoque.add(v);
+        if (novoVeiculo != null) { // 🟢 ADICIONEI ESTA VALIDAÇÃO
+            this.estoque.add(novoVeiculo);
             this.salvarArquivo();
         }
     }
