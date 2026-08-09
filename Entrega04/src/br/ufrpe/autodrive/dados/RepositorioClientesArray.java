@@ -29,8 +29,8 @@ public class RepositorioClientesArray implements IRepositorioClientes {
 
     @Override
     public void adicionarCliente(Cliente novoCliente) {
-        if (cliente != null) {
-            this.ListaDeClientes.add(cliente);
+        if (novoCliente != null) {
+            this.ListaDeClientes.add(novoCliente);
             this.salvarArquivo();
         }
     }
